@@ -212,10 +212,10 @@ function animateParticles() {
     var verts = particleSystem.geometry.vertices;
     for(var i = 0; i < verts.length; i++) {
         var vert = verts[i];
-        if (vert.z > 90) {
+        if (vert.z > 190) {
             vert.z = Math.random() * 400 - 200;
         }
-        vert.z = vert.z + (1000000 * 0.01);
+        vert.z = vert.z + (10 * 0.01);
     }
     particleSystem.geometry.verticesNeedUpdate = true;
 
