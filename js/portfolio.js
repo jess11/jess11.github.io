@@ -1,15 +1,12 @@
 $(window).on("load",function(){
     $('#fullpage').fullpage({
       scrollOverflow: true,
+      menu: '#menu',
+      anchors:['home', 'about', 'work', 'contact'],
+      keyboardScrolling: false,
     });
 
-  $('#fullpage').fullpage({
-    menu: '#menu',
-    anchors:['home', 'about', 'work', 'contact'],
-    keyboardScrolling: false,
-    responsiveWidth: 500,
-    responsiveHeight: 500,
-  });
+
 
 
 //ANIMATIONS
