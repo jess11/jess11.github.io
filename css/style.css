@@ -434,6 +434,9 @@ div#p0{
   .space{
     height: 40px;
   }
+  nav{
+    visibility: hidden;
+  };
 
 
 }

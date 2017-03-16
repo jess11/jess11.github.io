@@ -1,10 +1,15 @@
 $(window).on("load",function(){
-    $('#fullpage').fullpage({
-      scrollOverflow: true,
-      menu: '#menu',
-      anchors:['home', 'about', 'work', 'contact'],
-      keyboardScrolling: false,
-    });
+
+
+
+      $('#fullpage').fullpage({
+        scrollOverflow: true,
+        menu: '#menu',
+        anchors:['home', 'about', 'work', 'contact'],
+        keyboardScrolling: false,
+
+      });
+
 
 
 
