@@ -196,7 +196,7 @@ div#p0{
   font-size: 1.5em;
   margin:0 0 0.5em 0;
   font-weight: 300;
-  color: rgba(255,255,255,0.7)
+  color: rgba(255,255,255,0.9)
 }
 
 #jess{
@@ -211,9 +211,12 @@ div#p0{
 }
 
 #engaging{
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: lighter;
-  color: rgba(255,255,255,0.7)
+  color: rgba(255,255,255,0.9)
+
+  display: inline-block;
+    width: 200px;
 }
 
 
@@ -240,14 +243,14 @@ div#p0{
 }
 
 .blurb p{
-  font-size: 1em;
+  font-size: 1.2em;
   padding-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.01em;
   line-height: 1.2em;
   max-width: 700px;
   font-weight: 300;
-  color: rgba(255,255,255,0.8)
+  color: rgba(255,255,255,0.9)
 
 
 }
@@ -258,22 +261,24 @@ div#p0{
 .techBox{
  display: flex;
  justify-content: flex-start;
-
+  font-size: 1.2em;
 }
 
 .techBox div{
   margin: 0 1em;
-}
-.techType {
-  margin-bottom: 0em;
-  text-transform: uppercase;
-  padding-left: 0;
 
+}
+.techBox p{
+  margin-bottom: 0em;
+  padding-left: 0;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 .techList{
   text-decoration: none;
   list-style: none;
-  list-style: none;
+
 }
 /*PAGE: work*/
 
@@ -422,19 +427,19 @@ div#p0{
 }
 
 
-
-@media screen and (max-width: 375px) and (orientation: portrait){
+/*
+@media screen and (max-width: 500px) and (orientation: portrait){
   #jess{
     font-size: 200px;
   }
   #hello{
-    font-size: 40px;
+    font-size: 100px;
   }
   #engaging{
-    font-size: 25px;
+    font-size: 100px;
   }
   .blurb p{
-    font-size: 20px;
+    font-size: 40px;
   }
 
 
@@ -442,4 +447,4 @@ div#p0{
 
   @media screen and (max-width: 700px) and (orientation:landscape){
 
-  }
+  }*/
