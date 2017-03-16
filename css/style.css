@@ -53,6 +53,7 @@ header{
     z-index: 10;
 
 
+
 }
 
 nav {
@@ -60,6 +61,7 @@ nav {
   top:0;
   right:0;
   z-index:10000;
+
 }
 
 .navbar-holder{
@@ -147,6 +149,7 @@ h3 div{
 
   background-color:rgba(0,0,0,0.4);
   box-sizing: border-box;
+  padding-bottom:3em;
 
 }
 
@@ -263,6 +266,7 @@ div#p0{
   font-family: 'Roboto', sans-serif;
   max-width: 700px;
   font-weight: 300;
+  padding-bottom:3em;
 }
 
 .techBox div{
@@ -288,12 +292,13 @@ div#p0{
   display: flex;
   justify-content:flex-start;
   flex-wrap: wrap;
+  margin-bottom: 2em;
 
 
 }
 #workContainer div{
   /*border: 2px solid rgba(243, 209, 58,0.5);*/
-  margin: 1em 0.5em;
+  margin: 0.5em 0.5em;
   font-size: 1em;
 
 
@@ -398,11 +403,14 @@ div#p0{
 
 
 @media screen and (max-width: 500px) and (orientation: portrait){
+  .title{
+    margin-top: -2em;
+  }
   #jess{
     font-size: 2em;
   }
   #hello{
-    font-size: 1.2em;
+    font-size: 1em;
   }
   #engaging{
     font-size: 1em;
@@ -415,7 +423,9 @@ div#p0{
   }
   .page-wrapper{
     margin: 0 1.4em 0 1.4em;
-
+  }
+  nav li{
+    font-size:0.8em;
   }
 
 
