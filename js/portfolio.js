@@ -5,6 +5,8 @@ $(window).on("load",function(){
     anchors:['home', 'about', 'work', 'contact'],
     keyboardScrolling: false,
     scrollOverflow: true,
+    responsiveWidth: 500,
+    responsiveHeight: 500,
   });
 
 
