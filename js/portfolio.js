@@ -4,6 +4,7 @@ $(window).on("load",function(){
     menu: '#menu',
     anchors:['home', 'about', 'work', 'contact'],
     keyboardScrolling: false,
+    scrollOverflow: true,
   });
 
 

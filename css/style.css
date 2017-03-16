@@ -58,6 +58,7 @@ header{
 nav {
   position: fixed;
   top:0;
+  right:0;
   z-index:10000;
 }
 
@@ -143,10 +144,9 @@ h3 div{
 }
 
 #p2 {
-  min-height: 100vh;
-    margin-left: -1vw;
-    background-color:rgba(0,0,0,0.4);
-    padding-bottom: 3em;
+
+  background-color:rgba(0,0,0,0.4);
+  box-sizing: border-box;
 
 }
 
@@ -154,13 +154,11 @@ h3 div{
   min-height: 100vh;
   display:flex;
   justify-content: center;
-  align-items: center;
-  /*height: 101vh;*/
+  padding-top: 10em;
   width: 100vw;
-  margin-left: -1vw;
-  margin-top: 0px;
+  box-sizing: border-box;
   background-color:rgba(0,0,0,0.4);
-
+  margin-top: 0;
 
 }
 
@@ -211,12 +209,12 @@ div#p0{
 }
 
 #engaging{
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: lighter;
   color: rgba(255,255,255,0.9)
 
   display: inline-block;
-    width: 200px;
+    width: 250px;
 }
 
 
@@ -243,7 +241,7 @@ div#p0{
 }
 
 .blurb p{
-  font-size: 1.2em;
+  font-size: 1em;
   padding-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.01em;
@@ -261,7 +259,10 @@ div#p0{
 .techBox{
  display: flex;
  justify-content: flex-start;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  max-width: 700px;
+  font-weight: 300;
 }
 
 .techBox div{
@@ -285,34 +286,35 @@ div#p0{
 #workContainer {
 
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   flex-wrap: wrap;
+
 
 }
 #workContainer div{
   /*border: 2px solid rgba(243, 209, 58,0.5);*/
   margin: 1em 0.5em;
   font-size: 1em;
-  font-weight: bold;
+
+
 
 }
 
 .work-box{
-  width:30vw;
-  height: 30vw;
+  min-width:300px;
+  min-height: 300px;
   overflow: hidden;
   background-size: contain;
-  filter: saturate(30%);
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
     border: 3px solid white;
 }
 
 .work-box:hover{
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
   /*-ms-transform: rotate(10deg);
     -webkit-transform: rotate(10deg);
     transform: rotate(10deg);*/
-      filter: grayscale(0%);
+      filter: brightness(50%);
 }
 
 .work-box, #workContainer a{
@@ -323,6 +325,13 @@ div#p0{
   font-family: 'Open Sans', sans-serif;
 }
 
+#github{
+  width:30px;
+}
+
+.workText{
+  max-width: 500px;
+}
 .projectTitle{
 
 
@@ -355,58 +364,19 @@ div#p0{
 
 /*PAGE: contact*/
 
-/*TO help with coding: show background colors*/
-/*#p1 {
-  background-color: lightgreen;
-}*/
-/*#p2 {
-  background-color: pink;
-}*/
-
-#p3{
-  /*height: 30vh;*/
-}
-
 .contact-left, .contact-left a{
   text-decoration: none;
   color: white;
   font-weight: bold;
-  text-align: center;
   padding: 0.3em;
   letter-spacing: 0.2em;
   font-size: 1.1em;
 }
 
-/*.contact-left a:hover{
-    color:rgba(0,255,144,1);
-}*/
-
 .contact-left a:hover{
   color:white;
-  border-bottom: 1px solid rgba(255, 192, 0,1);
+  border-bottom: 1px solid rgba(255, 255, 255,1);
 }
-
-
-#p3 {
-  /*background-color: lightblue;*/
-
-}
-
-
-/*.animation-element{
-  position: relative;
-  opacity:0;
-}*/
-
-/*.animation-element.fadein{
-  opacity:0;
-  transition: 600ms linear;
-  transform: translate3d(0px, 200px, 0px);
-}
-.animation-element.fadein.in-view{
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
-}*/
 
 
 #world {
@@ -417,7 +387,6 @@ div#p0{
 	height: 100vh;
 	overflow: hidden;
   z-index: -100;
-
 }
 
 #p3a{
@@ -427,24 +396,27 @@ div#p0{
 }
 
 
-/*
+
 @media screen and (max-width: 500px) and (orientation: portrait){
   #jess{
-    font-size: 200px;
+    font-size: 2em;
   }
   #hello{
-    font-size: 100px;
+    font-size: 1.2em;
   }
   #engaging{
-    font-size: 100px;
+    font-size: 1em;
   }
   .blurb p{
-    font-size: 40px;
+    font-size: 1em;
+  }
+  .techBox p{
+    font-size: 0.5em;
+  }
+  .page-wrapper{
+    margin: 0 1.4em 0 1.4em;
+
   }
 
 
 }
-
-  @media screen and (max-width: 700px) and (orientation:landscape){
-
-  }*/
