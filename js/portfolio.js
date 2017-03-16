@@ -1,22 +1,10 @@
 $(window).on("load",function(){
 
-// //smooth scrolling
-// $(".smooth").smoothScroll();
-//
-// //selecting nav links
-// $("nav .link").on("click", function(){
-//   $("nav .active").removeClass("active");
-//   $(this).addClass("active");
-// });
-
-
- $('#pagepiling').pagepiling({
-   anchors: ['box', 'about', 'work', 'contact'],
-    menu: '#myMenu',
-    scrollingSpeed: 100,
-        easing: 'swing',
- });
-
+  $('#fullpage').fullpage({
+    menu: '#menu',
+    anchors:['home', 'about', 'work', 'contact'],
+    keyboardScrolling: false,
+  });
 
 
 //ANIMATIONS

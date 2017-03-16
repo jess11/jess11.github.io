@@ -1,141 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>jess</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet"> -->
+    <meta charset="UTF-8">
+    <title>jess</title>
 
-  <link rel="stylesheet" href="css/bounce.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
-  <script src="js/jquery-1.12.4.js"></script>
-  <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet"> -->
 
-  <script src="js/portfolio.js"></script>
-  <script src="js/three.js"></script>
-  <script src="js/three.js"></script>
-  <script src="js/orbitControls.js"></script>
-  <script src="js/backdrop.js"></script>
+    <link rel="stylesheet" href="css/bounce.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/orbitControls.js"></script>
+    <script src="js/backdrop.js"></script>
 </head>
+
 <body>
-<div id="world"></div>
-
-    <a id="box"></a>
-    <div id="p0">
-
-      <!-- <div class="title"><p id= "jess">jessica</p><p id="tran">tran</p></div> -->
-      <div class="title"><p id= "jess">JESSICA TRAN</p><p id="fullstack">Full-Stack Web Developer</p></div>
-      <div class="navbar-holder">
-      <header>
-        <div class="wrapper">
-          <p><a href="#box" class="" id="logo">
-
-            <!-- jessica tran -->
-            <!-- <img src="images/logo-big.png" alt="" id= "logo"> -->
-          </a></p>
-
-          <nav>
-            <ul id="myMenu">
-              <li data-menuanchor="box" ><a href="#box" class="link">home</a></li>
-              <li data-menuanchor="about" ><a href="#about" class=" link">about</a></li>
-              <li data-menuanchor="work" ><a href="#work" class=" link">work</a></li>
-              <li data-menuanchor="contact" ><a href="#contact" class=" link">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
-    </div>
-
-<div id="pagepiling">
-
-    <a id="about" class="section"></a>
-    <div id="p1">
-
-    <div class="page-wrapper">
-
-      <div class="container p1box">
-
-          <div class="space"></div>
-
-            <div class="blurb">
-              <h1 class="name center  animation-element slide-right">Hi, I'm Jess.</h1>
-              <p>I'm a full-stack web developer from Sydney. I enjoy programming creative and engaging experiences for the user and solving challenging problems. I enjoy learning new things, both in the front and back end. If I'm not programming you can find me watching Japanese Animation.</p>
 
 
-              <br>
-              <h1 class="center"> Tech Stack</h1><p> HTML - CSS - JavaScript - jQuery - Backbone - Ruby - Rails - Underscore - Git - Three.js - Ajax</p>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="p2">
-      <a id="work"></a>
-    <div class="page-wrapper">
-      <div class="container">
-        <div class="page-wrapper">
-          <div class="container">
-
-              <div class="space"></div>
-              <h3 class="animation-element slide-right"><div>work</div></h3>
-
-              <div class="workText"></div>
-              <div id="workContainer">
-                  <div>
-                  <a href="https://jess11.github.io/project0-2/" target="_blank">
-                    <div class="work-box work1"></div>
-                  </a>
-                  <a href="https://twitter-clone11.herokuapp.com/" target="_blank"> <div class="work-box work2">
-                  </div></a>
-                  </div>
-                  <div>
-                  <a href="https://gogirls-fashions.herokuapp.com" target="_blank"><div class="work-box work3"></div></a>
-                  <a href="https://img-maker.herokuapp.com" target="_blank"><div class="work-box work4">
-                  </div>
-                  </div></a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="p3">
-      <a id="contact"></a>
-    <div class="page-wrapper">
-      <div class="container">
-          <div class="space"></div>
-            <h3 class=" animation-element slide-right"><div>contact</div></h3>
-              <div class="contact-left">
-                <div class="contact-wrapper">
-                  <p>
-                    <a href="mailto:jtran040@gmail.com">jtran040@gmail.com</a>
-                  </p>
-                  <p>
-                    <a href="http://www.linkedin.com/in/jess11" target="_blank">linkedin.com/in/jess11</a>
-                  </p>
-                  <p>
-                    <a href="http://www.github.com/jess11" target="_blank">github.com/jess11</a>
-                  </p>
 
 
+    <div id="world"></div>
+
+    <nav>
+        <ul id="menu">
+            <li data-menuanchor="home"><a href="#home">home</a></li>
+            <li data-menuanchor="about"><a href="#about">about</a></li>
+            <li data-menuanchor="work"><a href="#work">work</a></li>
+            <li data-menuanchor="contact"><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="fullpage">
+
+            <div class="section" id="section1">
+                <div id="p0">
+                    <div class="title">
+                        <p id="jess">JESSICA TRAN</p>
+                        <p id="fullstack">Full-Stack Web Developer</p>
+                    </div>
+                    <div class="navbar-holder">
+                        <header>
+                            <div class="wrapper">
+                                <p>
+                                    <a href="#box" class="" id="logo">
+                                    </a>
+                                </p>
+                            </div>
+                        </header>
+                    </div>
                 </div>
-              </div>
-              <div class="contact-right">
+            </div>
 
-              </div>
-            <p>
-            </p>
+
+            <div class="section" id="section2">
+                <div id="p1">
+
+                    <div class="page-wrapper">
+
+                        <div class="container p1box">
+
+                            <div class="space"></div>
+
+                            <div class="blurb">
+                                <h1 class="name center  animation-element slide-right">Hi, I'm Jess.</h1>
+                                <p>I'm a full-stack web developer from Sydney. I enjoy programming creative and engaging experiences for the user and solving challenging problems. I enjoy learning new things, both in the front and back end. If I'm not programming
+                                    you can find me watching Japanese Animation.</p>
+
+
+                                <br>
+                                <h1 class="center"> Tech Stack</h1>
+                                <p> HTML - CSS - JavaScript - jQuery - Backbone - Ruby - Rails - Underscore - Git - Three.js - Ajax</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section fp-auto-height" id="section3">
+                <div id="p2">
+
+
+                            <div class="page-wrapper">
+                                <div class="container">
+
+                                    <div class="space"></div>
+                                    <h3 class="animation-element slide-right"><div>work</div></h3>
+
+                                    <div class="workText"></div>
+                                    <div id="workContainer">
+                                        <div>
+                                            <a href="https://jess11.github.io/project0-2/" target="_blank">
+                                                <div class="work-box work1"></div>
+                                            </a>
+                                            <a href="https://twitter-clone11.herokuapp.com/" target="_blank">
+                                                <div class="work-box work2"></div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://gogirls-fashions.herokuapp.com" target="_blank">
+                                                <div class="work-box work3"></div>
+                                            </a>
+                                            <a href="https://img-maker.herokuapp.com" target="_blank">
+                                                <div class="work-box work4"></div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section4">
+                <div id="p3">
+
+                    <div class="page-wrapper">
+                        <div class="container">
+                            <div class="space"></div>
+                            <h3 class=" animation-element slide-right"><div>contact</div></h3>
+                            <div class="contact-left">
+                                <div class="contact-wrapper">
+                                    <p>
+                                        <a href="mailto:jtran040@gmail.com">jtran040@gmail.com</a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.linkedin.com/in/jess11" target="_blank">linkedin.com/in/jess11</a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.github.com/jess11" target="_blank">github.com/jess11</a>
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="contact-right">
+
+                            </div>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
 
-</div>
 </body>
+
 </html>

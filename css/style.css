@@ -55,6 +55,12 @@ header{
 
 }
 
+nav {
+  position: fixed;
+  top:0;
+  z-index:10000;
+}
+
 .navbar-holder{
   /*margin-top: -5em;*/
   height: 3em;
@@ -139,7 +145,7 @@ h3 div{
 }
 
 #p2 {
-    height: 130vh;
+    padding-bottom: 3em;
     width: 101vw;
     margin-left: -1vw;
     background-color:rgba(0,0,0,0.4);
@@ -154,7 +160,7 @@ h3 div{
   height: 101vh;
   width: 101vw;
   margin-left: -1vw;
-  margin-bottom: -1em;
+  margin-top: 0px;
   background-color:rgba(0,0,0,0.4);
 
 
@@ -240,22 +246,16 @@ text-align: center;
 
 }
 #workContainer div{
-  height: 50vh;
-  width: 50vh;
   /*border: 2px solid rgba(243, 209, 58,0.5);*/
   margin: 1em 0.5em;
   font-size: 1em;
   font-weight: bold;
 
-
-
-
 }
 
 .work-box{
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
+  width:30vw;
+  height: 30vw;
   overflow: hidden;
   background-size: contain;
   filter: saturate(30%);
