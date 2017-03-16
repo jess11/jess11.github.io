@@ -8,7 +8,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: rgba(255, 192, 0,1);
+  color: white;
   /*background-color: #171a5f;*/
 
 
@@ -84,27 +84,26 @@ nav li{
 
 nav a, #logo{
   text-decoration: none;
-  color:rgba(255, 192, 0,0.8);
+  color:white;
   padding: 13px 10px 10px 10px;
   font-weight: bold;
   letter-spacing: 0.2em;
 }
 
 nav a:hover{
-    color:rgba(247, 225, 105,1);
-    border-bottom: 3px solid rgba(255, 192, 0,1);
+    color:white;
+    border-bottom: 3px solid white;
 
 }
 
 .active{
   /*border-top: 3px solid rgba(0,255,144,1);*/
-  color:rgba(243, 209, 58,1);
+  color:white;
 }
 
 .container{
   display:block;
-  padding-left: 3em;
-  padding-right: 3em;
+  width: 90vw;
 }
 
 .space{
@@ -114,13 +113,14 @@ nav a:hover{
 
 h3{
   display: block;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+
 
 }
 
 h3 div{
-    border: 3px solid rgba(255, 192, 0,1);
+    border: 3px solid white;
     display:inline-block;
     margin: 0 auto;
     padding: .5em;
@@ -131,22 +131,19 @@ h3 div{
 }*/
 
 .page-wrapper{
+  margin: 0 2em 0 2em;
 
-    width: 100%;
 }
 
 #p1 {
-    height: 103vh;
-    width: 101vw;
-    margin-left: -1vw;
+    min-height: 100vh;
     background-color: rgba(0,0,0,0.4);
     /*background:linear-gradient(to top, rgba(0,0,0,0.4)60%,rgba(0,0,0,0)) ;*/
 
 }
 
 #p2 {
-    padding-bottom: 3em;
-    width: 101vw;
+  min-height: 100vh;
     margin-left: -1vw;
     background-color:rgba(0,0,0,0.4);
     padding-bottom: 3em;
@@ -154,11 +151,12 @@ h3 div{
 }
 
 #p3{
+  min-height: 100vh;
   display:flex;
   justify-content: center;
   align-items: center;
-  height: 101vh;
-  width: 101vw;
+  /*height: 101vh;*/
+  width: 100vw;
   margin-left: -1vw;
   margin-top: 0px;
   background-color:rgba(0,0,0,0.4);
@@ -171,22 +169,22 @@ h3 div{
 #p0{
   padding-top: 4%;
   height: 100vh;
+  padding: 2em;
 }
 
 div#p0{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   color: white;
 
 }
 
 .title{
-  letter-spacing: 0.1em;
-  color: rgba(255, 192, 0,1);
 
-  padding: 0.3em;
+  color: white;
+
+  margin-top:2em;
   font-weight: 500;
 
 
@@ -194,26 +192,46 @@ div#p0{
 
 }
 
+#hello{
+  font-size: 1.5em;
+  margin:0 0 0.5em 0;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7)
+}
 
 #jess{
  margin:0;
  font-size: 4.5em;
- text-align: center;
 }
 
 #fullstack{
-text-align: center;
- margin:0;
- text-transform: uppercase;
- font-size: 2em;
+
+ margin:1em;
+ font-size: 1.5em;
 }
 
+#engaging{
+  font-size: 1em;
+  font-weight: lighter;
+  color: rgba(255,255,255,0.7)
+}
 
 
 /*PAGE: about*/
 
+.profilePhoto{
+  width:20vw;
+  height:20vw;
+  background-image: url(../images/profile_photo.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
 .name{
-  padding-top: 2em;
+  border-radius: 50%;
   margin-bottom: 0.5em;
 
 }
@@ -222,20 +240,41 @@ text-align: center;
 }
 
 .blurb p{
-  text-align: center;
   font-size: 1em;
   padding-bottom: 2%;
-  line-height: 1.4em;
-  letter-spacing: 0.04em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.2em;
+  max-width: 700px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8)
+
 
 }
 .p1box{
   margin: 0 auto;
-  max-width: 500px;
+
+}
+.techBox{
+ display: flex;
+ justify-content: flex-start;
 
 }
 
+.techBox div{
+  margin: 0 1em;
+}
+.techType {
+  margin-bottom: 0em;
+  text-transform: uppercase;
+  padding-left: 0;
+
+}
+.techList{
+  text-decoration: none;
+  list-style: none;
+  list-style: none;
+}
 /*PAGE: work*/
 
 #workContainer {
@@ -260,7 +299,7 @@ text-align: center;
   background-size: contain;
   filter: saturate(30%);
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
-    border: 3px solid rgba(255,255,255,0.7);
+    border: 3px solid white;
 }
 
 .work-box:hover{
@@ -275,7 +314,7 @@ text-align: center;
 
   text-align: center;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -325,7 +364,7 @@ text-align: center;
 
 .contact-left, .contact-left a{
   text-decoration: none;
-  color: rgba(255, 192, 0,0.9);
+  color: white;
   font-weight: bold;
   text-align: center;
   padding: 0.3em;
@@ -338,7 +377,7 @@ text-align: center;
 }*/
 
 .contact-left a:hover{
-  color:rgba(255, 192, 0,1);
+  color:white;
   border-bottom: 1px solid rgba(255, 192, 0,1);
 }
 
@@ -374,4 +413,10 @@ text-align: center;
 	overflow: hidden;
   z-index: -100;
 
+}
+
+#p3a{
+  height: 103vh;
+  width: 101vw;
+  color:white;
 }

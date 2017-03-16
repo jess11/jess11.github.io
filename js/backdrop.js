@@ -151,6 +151,7 @@ var asteroid;
 
 function createAsteroid(){
 	asteroid = new Asteroid();
+	asteroid.mesh.position.x = -100;
 	asteroid.mesh.position.y = -350;
   asteroid.mesh.position.z = 100;
 	scene.add(asteroid.mesh);
@@ -160,6 +161,8 @@ function createRose(){
   rose = new Rose();
   rose.mesh.position.y = -35;
   rose.mesh.position.z = 40;
+	rose.mesh.position.x = -100;
+
   scene.add(rose.mesh);
 }
 
@@ -215,7 +218,8 @@ function animateParticles() {
         if (vert.z > 190) {
             vert.z = Math.random() * 400 - 200;
         }
-        vert.z = vert.z + (10 * 0.01);
+        vert.z = vert.z + (20 * 0.01);
+
     }
     particleSystem.geometry.verticesNeedUpdate = true;
 
