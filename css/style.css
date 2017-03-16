@@ -420,3 +420,26 @@ div#p0{
   width: 101vw;
   color:white;
 }
+
+
+
+@media screen and (max-width: 375px) and (orientation: portrait){
+  #jess{
+    font-size: 200px;
+  }
+  #hello{
+    font-size: 40px;
+  }
+  #engaging{
+    font-size: 25px;
+  }
+  .blurb p{
+    font-size: 20px;
+  }
+
+
+}
+
+  @media screen and (max-width: 700px) and (orientation:landscape){
+
+  }
