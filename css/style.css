@@ -11,8 +11,6 @@ body{
   color: white;
   /*background-color: #171a5f;*/
 
-
-
 }
 
 #section2,#section3,#section4{
@@ -255,7 +253,7 @@ div#p0{
   line-height: 1.2em;
   max-width: 700px;
   font-weight: 300;
-  color: rgba(255,255,255,0.9)
+  color: rgba(255,255,255,0.9);
 
 
 }
@@ -274,7 +272,7 @@ div#p0{
 }
 
 .techBox div{
-  margin: 0 1em;
+  margin: 0 0.5em;
 
 }
 .techBox p{
@@ -398,10 +396,11 @@ div#p0{
   z-index: -100;
 }
 
-#p3a{
-  height: 103vh;
-  width: 101vw;
-  color:white;
+.footer{
+  vertical-align: bottom;
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: rgba(255,255,255,0.5)
 }
 
 
