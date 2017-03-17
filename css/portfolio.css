@@ -1,0 +1,247 @@
+body{
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.8);
+}
+#sign{
+  position: fixed;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+  right:-50;
+  top:50vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.5);
+
+}
+
+nav{
+    text-align: center;
+      margin-top: 7px;
+}
+
+nav li{
+  display: inline-block;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.6em 0.5em;
+
+
+}
+
+nav a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  padding: 13px 10px 10px 10px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  list-style: none;
+}
+
+nav a:hover{
+  color: rgba(0,0,0,0.8);
+  border-top: 3px solid rgba(0,0,0,0.8);
+}
+
+header{
+  width: 100vw;
+  height: 40px;
+  background-color: rgba(255,255,255,1);
+  position: fixed;
+  top:0;
+}
+/*font-family: 'Roboto', sans-serif;  400 or 700
+font-family: 'Open Sans', sans-serif;*/
+.name{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  display: block;
+
+}
+
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.pageWrapper{
+  padding: 0 3em 0 3em;
+  box-sizing: border-box;
+  text-align: center;
+
+
+}
+
+#home, #about, #stack, #contact{
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+#work{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+
+}
+
+#workContainer{
+  border-bottom: 2px dashed #aaa;
+
+  margin-bottom: -1px;
+  padding: 1em;
+
+}
+
+.photo{
+  width:250px;
+  height:250px;
+  background-image: url(../images/profile_photo.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.aboutMe{
+  max-width: 400px;
+}
+
+.hightlight{
+  color: green;
+}
+
+#stack div{
+  text-align: center;
+
+}
+
+#stack li{
+  list-style: none;
+}
+
+#stack div div{
+  margin: 2em 1em;
+}
+
+#stack p, .sectionName{
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+.techName{
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  border: 2px solid rgba(0,0,0,0.8);
+  display: inline-block;
+  padding: 1em;
+  letter-spacing: 5px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+  -moz-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+  box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+}
+
+.sectionName{
+  border: 2px solid rgba(0,0,0,0.8);
+  display: inline-block;
+  padding: 1em;
+  margin-bottom: -1em;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+  -moz-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+  box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+}
+
+
+.workText{
+  max-width: 500px;
+}
+
+#workContainer a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  list-style: none;
+}
+#workContainer a:hover{
+  color: rgba(0,0,0,0.9);
+}
+
+#github:hover{
+  color: rgba(0,0,0,0.9);
+  text-decoration: none;
+}
+
+.workName{
+  margin: 0 0 -1em 0  ;
+}
+/*
+.container{
+  width: 100vw;
+  height: 90vh;
+  box-sizing: border-box;
+  padding: 0.6em 0.6em 0 0.6em;
+  font-size: 3em;
+
+}
+.container div{
+  background-color: yellow;
+  height: 100%;
+}*/
+
+/*Footer*/
+footer a{
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: white;
+}
+
+.footerContainer{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+#github, #githubBottom{
+  font-size: 34pt;
+  color: rgb(189, 190, 192);
+}
+
+
+
+.icons{
+  height: 32px;
+  margin-left: 20px;
+  margin-bottom: -24px;
+}
+
+
+#resume{
+  filter: opacity(0.8);
+}
+
+.iconWrapper{
+  display: inline-block;
+  margin-left: -3px;
+
+}
