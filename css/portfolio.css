@@ -21,14 +21,61 @@ body{
 
 }
 
-nav{
-    text-align: center;
-      margin-top: 7px;
+#menu{
+  width:2.5em;
+  position: fixed;
+  right:20;
+  top:20;
+  display:none;
+  z-index: 100;
+}
+
+.menuList{
+  background-color: rgba(255,255,255,1);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left:0;
+  top:0;
+  display:none;
+}
+
+.display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuList li, .menuList a{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1em 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  list-style: none;
 
 }
 
+.menuList a:hover{
+    color: rgba(0,0,0,0.8);
+    text-decoration: underline;
+}
+
+
+nav{
+  text-align: center;
+  margin-top: 7px;
+}
+
+.selectedNav{
+  color: rgba(0,0,0,0.8);
+  border-top: 3px solid rgba(0,0,0,0.8);
+}
+
 nav li{
-  width: 20%;
   display: inline-block;
   font-size: 1em;
   text-transform: uppercase;
@@ -67,7 +114,7 @@ font-family: 'Open Sans', sans-serif;*/
   font-weight: bolder;
   letter-spacing: 0.1em;
   display: block;
-
+  margin-top: -2em;
 }
 
 .title{
@@ -259,11 +306,11 @@ footer{
 }
 
 #sign, header{
-  visibility: hidden;
+  display:none;
 }
 
 
 
-.crossbar{
-  visibility: visible;
+#menu{
+  display: inherit;
 }
