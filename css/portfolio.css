@@ -135,7 +135,7 @@ header{
 }
 
 #home, #about, #stack, #contact{
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -334,5 +334,24 @@ footer{
   .title{
     font-size: 1.4em;
     width:100%;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape){
+  #home{
+    padding-top: 2em;
+  }
+  .name{
+    font-size: 2em;
+  }
+  .title{
+    font-size: 1.4em;
+    width:100%;
+  }
+  #sign, header{
+    display:none;
+  }
+  #menu{
+    display: inherit;
   }
 }
