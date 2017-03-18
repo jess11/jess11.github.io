@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,6 +7,7 @@
   <title>Jessica Tran | Full Stack</title>
   <!-- <link rel="stylesheet" href="css/jquery.fullPage.css"> -->
   <link rel="stylesheet" href="css/devicons.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/portfolio.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
   <script src="js/jquery-1.12.4.js"></script>
@@ -29,7 +31,7 @@
 
   </div> -->
   <img src="images/menu.png" alt="" id="menu">
-  <div class="menuList">
+  <div class="menuList animated in-view">
     <div>
     <li><a href="#home">home</a></li>
     <li><a href="#about">about</a></li>
@@ -39,33 +41,37 @@
     </div>
   </div>
 
+
   <p id="sign">Handmade with love by Jess</p>
+
       <div class="pageWrapper">
 
 
 
         <div id="home">
+
           <div>
+
             <h1 class="name">JESSICA TRAN</h1>
             <p class="title">hello, I'm a Full-Stack Web Developer.</p>
-            <p class="title">I enjoy creating engaging experiences for the user.</p>
+            <p class="title">I enjoy solving probems and bringing creative ideas to life.</p>
           </div>
         </div>
 
         <div id="about">
           <div>
-            <p class="techName">About Me</p>
+            <p class="techName animated slideInUp">About Me</p>
             <div class="photo"></div>
-            <p class="aboutMe">I'm a light-hearted girl from Sydney, Australia with a background in Physiotherapy.  When I'm not coding, you can find me watching Japanese animation, drinking bubble tea, exercising or learning something new.
-            With web development, I get a kick out of solving tricky problems and cannot stop until I find the solution.
+            <p class="aboutMe">I'm a light-hearted girl from Sydney, Australia with a background in Physiotherapy.  When I'm not coding, you can find me watching Japanese animation, exercising or learning something new.
             </p>
+            <p class="aboutMe">I get a kick out of solving difficult problems and am always determined to find a solution.</p>
           </div>
         </div>
 
         <div id="stack">
           <div>
             <div>
-              <p class="techName">Tech Stack</p>
+              <p class="techName animated slideInUp">Tech Stack</p>
               <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
@@ -76,14 +82,14 @@
               <li>Ruby on Rails</li>
             </div>
             <div>
-              <p>- Dabbled In -</p>
+              <p class="animated fadeInUp">- Dabbled In -</p>
               <li>Phaser</li>
               <li>Google Maps</li>
               <li>Three.js</li>
               <li>Websockets</li>
             </div>
             <div>
-              <p>- Things I want to learn -</p>
+              <p class="animated fadeInUp">- Things I want to learn -</p>
               <li>React</li>
               <li>Angular</li>
               <li>Node.js</li>
@@ -97,18 +103,19 @@
           <div class="workWrapper">
 
 
-          <p class="sectionName" >work</p>
+          <p class="sectionName animated slideInUp" >work</p>
 
 
             <div id="workContainer">
 
 
               <div class="workText">
+                <div class="work-box work1"></div>
                 <a href="https://gogirls-fashions.herokuapp.com" target="_blank">
-                  <p class="workName">Get Fashion</p>
+                  <p class="workName animated zoomIn">Get Fashion</p>
                 </a>
                 <p>
-                  E-commerce fashion website. This was a group project and I was responsible for creating the back-end for the pages showing the listing of the products and creating a filtering system, and connecting the user from the homepage, to the product listing and then to the individual products. I also implemented the Stripe api to allow credit card payments and contributed to the front end for the admin and payment pages.
+                  E-commerce fashion website, with a payment system and chat bot. This was a group project where I worked on parts of the back end (product listing/ Stripe api) and front end.
                 </p>
                 <p>
                   Created with HTML, CSS, Javascript, Bootstrap, Ruby on Rails, Stripe api, API.ai, Cloudinary
@@ -120,11 +127,12 @@
 
             <div id="workContainer">
               <div class="workText">
+                <div class="work-box work2"></div>
                 <a href="https://twitter-clone11.herokuapp.com/" target="_blank">
-                  <p class="workName">Twitter Simplified</p>
+                  <p class="workName animated zoomIn">Twitter Simplified</p>
                 </a>
                 <p>
-                  A web app where people can sign up, share posts and follow each other. I tried to make a clone of Twitter.
+                  A web app similar to Twitter where people can sign up, share posts and follow each other.
                 </p>
                 <p>
                   Created with HTML, CSS, Javascript, Bootstrap, Ruby on Rails, Cloudinary, Google Maps api
@@ -136,11 +144,12 @@
 
             <div id="workContainer">
               <div class="workText">
+                <div class="work-box work3"></div>
                 <a href="https://img-maker.herokuapp.com" target="_blank">
-                  <p class="workName">Image Maker</p>
+                  <p class="workName animated zoomIn">Image Maker</p>
                 </a>
                 <p>
-                  Users can take photos of themselves, draw on it and then publish it onto the website. Also includes application of filters using a face detection library. Currently, doesn't work on iOS phones due to lack of support of webRTC.
+                  People take photos of themselves, draw on it and then publish them onto the web. Includes application of mask filters using a face detection library. Currently, webRTC is not supported on iOS mobile devices.
                 </p>
                 <p>
                   Created with HTML, CSS, Javascript, jQuery, webRTC,  Bootstrap, Ruby on Rails, Cloudinary, CCV.js/face.js, ajax
@@ -152,11 +161,12 @@
 
             <div id="workContainer">
               <div class="workText">
+                <div class="work-box work4"></div>
                 <a href="https://jess11.github.io/project0-2/" target="_blank">
-                  <p class="workName">Tic Tac Toe</p>
+                  <p class="workName animated zoomIn">Tic Tac Toe</p>
                 </a>
                 <p>
-                  Children's two-player game with custom sized board. I wanted to created something different and so I came up with your out of the ordinary combination of monkeys and unicorns.
+                  Children's two-player game with a custom sized board.
                 </p>
                 <p>
                   Created with HTML, CSS, Javascript, jQuery
@@ -173,7 +183,7 @@
 
       <div id="contact">
         <div>
-          <p class="techName">Contact Me</p>
+          <p class="techName animated slideInUp">Contact Me</p>
           <p class="aboutMe">
             Feel free to contact me down below.
           </p>
