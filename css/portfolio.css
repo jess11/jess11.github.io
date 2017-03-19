@@ -135,28 +135,46 @@ header{
 }
 
 #home, #about, #stack, #contact{
-  min-height: 100vh;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1em 1em 3em 1em;
 }
 
 #home{
-  margin-top:-30px;
+  min-height: 100vh;
+}
+
+#about{
+  background-color: rgba(239, 241, 240, 0.6)
+
 }
 #work{
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 70px;
+  background-color: rgba(239, 241, 240, 0.6);
+  padding-top: 1em;
 }
 
+#stack{
+  background-color: rgba(0, 245, 215, 0.5);
+  padding-top: 0;
+}
+
+#contact div{
+padding-bottom: 3em;
+}
+
+#contact{
+  background-color: rgba(0, 245, 215, 0.5);
+}
 #workContainer{
-  border-bottom: 2px dashed #aaa;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
   margin-bottom: -1px;
-  padding: 1em;
+  padding: 2em 1em 2em 1em ;
 }
 
 .photo{
@@ -179,59 +197,46 @@ header{
 
 #stack div{
   text-align: center;
+  margin-top: 0.5em;
 }
 
 #stack li{
   list-style: none;
 }
 
-#stack div div{
+.stackBox{
   margin: 2em 1em;
 }
 
-#stack p, .sectionName{
+.techStack, .sectionName{
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 5px;
+
 }
 
 .techName{
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1.3em;
   font-weight: 600;
-  border: 2px solid rgba(0,0,0,0.8);
   display: inline-block;
   padding: 1em;
   letter-spacing: 5px;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
-  -moz-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
-  box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
-.sectionName{
-  border: 2px solid rgba(0,0,0,0.8);
-  display: inline-block;
-  padding: 1em;
-  margin-bottom: -1em;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
-  -moz-box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
-  box-shadow: 2px 2px 2px 1px rgba(214,214,214,1);
-}
-
 
 .workText{
   max-width: 500px;
 }
-
 
 .work-box{
   width:100%;
   height: 20em;
   overflow: hidden;
   background-size: cover;
-  margin: 1em auto 0 auto;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+  margin: 1.5em auto 1.5em auto;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   border: 3px solid white;
 }
 
@@ -245,13 +250,14 @@ header{
 
 .work3{
   background-image: url("../images/imgmaker.png");
+  filter: brightness(110%);
 }
 
 .work4{
   background-image: url("../images/ttt.png");
 }
 
-#workContainer a, .contactName a{
+#workContainer a, .contactName a, .workName{
   text-decoration: none;
   color: rgba(0,0,0,0.6);
   padding: 0px 10px 0px 10px;
@@ -260,17 +266,24 @@ header{
   list-style: none;
 }
 
-#workContainer a:hover, .contactName a:hover{
-  color: rgba(0,0,0,0.9);
+.contactName a:hover{
+  color: rgba(0,0,0,0.7);
 }
-
-#github:hover{
-  color: rgba(0,0,0,0.9);
-  text-decoration: none;
-}
-
 .workName{
-  margin: 0 0 -1em 0  ;
+  margin: 1em 0 1em 0;
+  font-size: 1.3em;
+  color: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+#firstWorkTitle{
+  margin-bottom: -3em;
+}
+.open{
+  width:1.8em;
+  margin-bottom: 3px;
 }
 
 /*Footer*/
@@ -291,9 +304,14 @@ footer{
   padding-bottom: 1em;
 }
 
-#github, #githubBottom{
+#githubBottom{
   font-size: 34pt;
   color: rgb(189, 190, 192);
+}
+
+#github{
+  font-size: 34pt;
+  color: rgb(128, 128, 128);
 }
 
 .icons{
@@ -337,6 +355,12 @@ footer{
     font-size: 1.4em;
     width:100%;
   }
+  #home, #about, #stack, #contact{
+    padding: 0.5em 1em 2em 1em;
+  }
+  .pageWrapper{
+    padding: 0 1.5em;
+  }
 }
 
 @media screen and (max-height: 500px) and (orientation: landscape){
@@ -356,4 +380,5 @@ footer{
   #menu{
     display: inherit;
   }
+
 }
