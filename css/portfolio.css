@@ -359,7 +359,7 @@ footer{
     padding: 0.5em 1em 2em 1em;
   }
   .pageWrapper{
-    padding: 0 1.5em;
+    padding: 0 1em;
   }
 }
 
@@ -379,6 +379,9 @@ footer{
   }
   #menu{
     display: inherit;
+  }
+  .pageWrapper{
+    padding: 0 1.5em;
   }
 
 }
