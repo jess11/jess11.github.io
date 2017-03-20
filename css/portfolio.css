@@ -141,7 +141,7 @@ header{
 }
 
 .pageWrapper{
-  padding: 0 3em;
+  padding: 0 4em 0 3em;
   box-sizing: border-box;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -155,6 +155,9 @@ header{
   justify-content: center;
   padding: 1em 1em 3em 1em;
   min-height:100vh;
+}
+.section{
+    margin-right: -7em;
 }
 
 #p1{
@@ -376,7 +379,7 @@ footer{
     width:100%;
   }
   #p1, #p2, #p3, #p5{
-    padding: 0em 1em 0em 1em;
+    padding: 0em 1em 3em 1em;
     height:100vh;
   }
   #p4{
