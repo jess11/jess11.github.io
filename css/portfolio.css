@@ -34,6 +34,15 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.signBottom{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.5);
+  font-family: 'Roboto', sans-serif;
+  margin-top:2em;
+  display:none;
+}
+
 #menu{
   width:2.5em;
   position: fixed;
@@ -368,8 +377,8 @@ footer{
 
   #sign, header, footer{
     display:none;
-    font-family: 'Roboto', sans-serif;
   }
+
 
   .work-box{
     height:15em;
@@ -377,7 +386,7 @@ footer{
     background-position: center;
   }
 
-  #menu{
+  #menu, .signBottom{
     display: inherit;
   }
 
@@ -422,7 +431,7 @@ footer{
   #sign, header, footer{
     display:none;
   }
-  #menu{
+  #menu, .signBottom{
     display: inherit;
   }
   .pageWrapper{

@@ -4,25 +4,25 @@ var scene,
 		camera, controls, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH,
 		renderer, container;
 
-var step =0;
+var step = 0;
 var speed = 20;
 function init() {
 
+	//on mouse scroll down speed up particles
 	$(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta < 0) {
 				speed = 300;
 				setTimeout(function(){ speed=20 }, 1200);
     }
-});
+	});
 
 	createScene();
 	createAsteroid();
+	// createChar();
   createParticles();
 	createLights();
 
 	loop();
-
-
 
 }
 
@@ -30,9 +30,9 @@ function createScene() {
 	HEIGHT = window.innerHeight;
 	WIDTH = window.innerWidth;
 	scene = new THREE.Scene();
-	scene.fog = new THREE.Fog(0x061333, 100, 950);
+	scene.fog = new THREE.Fog(0x061333, 100, 950); //color,near,far
 
-	camera = new THREE.PerspectiveCamera(60,WIDTH / HEIGHT,1,10000);
+	camera = new THREE.PerspectiveCamera(60,WIDTH / HEIGHT,1,10000);//field of view,ratio,near,far
 
   camera.position.x = 0;
   camera.position.z = 300;
@@ -40,8 +40,8 @@ function createScene() {
 
 
   renderer = new THREE.WebGLRenderer({
-    alpha: true,
-    antialias: true
+    alpha: true, //transparent background
+    antialias: true //makes lines smooth
   });
 
 
@@ -96,8 +96,8 @@ Asteroid = function(){
     ang = Math.random()*Math.PI*2;
     amp =  2 + Math.random()*15;
 
-    v.x = v.x + Math.cos(ang)*amp;
-    v.y = v.y + Math.sin(ang)*amp;
+    v.x = v.x + Math.sin(ang)*amp;
+    v.y = v.y + Math.cos(ang)*amp;
 
 
 	};
@@ -118,15 +118,44 @@ var asteroid;
 
 function createAsteroid(){
 	asteroid = new Asteroid();
-	asteroid.mesh.position.x = -100;
+	asteroid.mesh.position.x = 0;
 	asteroid.mesh.position.y = -350;
-  asteroid.mesh.position.z = 100;
+  asteroid.mesh.position.z = 80;
 	scene.add(asteroid.mesh);
+}
+
+Char = function(){
+
+  var geom = new THREE.PlaneGeometry(95,110);
+
+  // create the material
+  var mat = new THREE.MeshBasicMaterial({
+    // color:Colors.blue,
+    transparent:true,
+    shading:THREE.FlatShading,
+    map: THREE.ImageUtils.loadTexture("../images/girl.png"),
+    side: THREE.DoubleSide
+  });
+
+  this.mesh = new THREE.Mesh(geom, mat);
+}
+
+var char;
+
+function createChar(){
+  char = new Char();
+  char.mesh.position.y = 30;
+  char.mesh.position.z = 200;
+	char.mesh.position.x = 0;
+
+  scene.add(char.mesh);
 }
 
 function loop(){
   step += 0.01;
-  asteroid.mesh.position.y = -350 + (2 * Math.sin(step));
+	// asteroid.mesh.position.z = 100 + (100 * Math.sin(step));
+	// asteroid.mesh.rotation.y +=  Math.PI/180;
+	// char.mesh.position.y = 100 + (40 * Math.sin(step));
   animateParticles();
 	renderer.render(scene, camera);
 	requestAnimationFrame(loop);
@@ -151,7 +180,7 @@ function createParticleSystem() {
 
     var particleMaterial = new THREE.PointsMaterial(
             {color: 0xffc0cb,
-             size: 2,
+             size: 2.4,
              map: THREE.ImageUtils.loadTexture("../images/petal.png"),
              blending: THREE.AdditiveBlending,
              transparent: true,
@@ -174,9 +203,9 @@ function animateParticles() {
     for(var i = 0; i < verts.length; i++) {
         var vert = verts[i];
         if (vert.z > 190) {
-            vert.z = Math.random() * 400 - 200;
+            vert.z = Math.random() * 400 -400;
         }
-        vert.z = vert.z + (speed * 0.01);
+        vert.z = vert.z + (speed * 0.02);
 
     }
     particleSystem.geometry.verticesNeedUpdate = true;
