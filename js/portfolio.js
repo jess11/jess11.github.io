@@ -5,7 +5,12 @@ $(document).ready(function(){
   menu: '#navBar',
   anchors:['home', 'about', 'stack', 'work', 'contact'],
   keyboardScrolling: false,
-  responsiveWidth:500,
+  scrollOverflowOptions: {
+    scrollbars: false,
+    mouseWheel: true,
+    hideScrollbars: true,
+  }
+
   });
 
   //Pop up menu on phones
