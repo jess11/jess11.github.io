@@ -5,8 +5,8 @@ $(document).ready(function(){
   menu: '#navBar',
   anchors:['home', 'about', 'stack', 'work', 'contact'],
   keyboardScrolling: false,
+  responsiveWidth:500,
   });
-
 
   //Pop up menu on phones
   var menuOn = false;
