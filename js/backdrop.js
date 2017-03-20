@@ -214,7 +214,7 @@ function createParticleSystem() {
 
     var particleMaterial = new THREE.PointsMaterial(
             {color: 0xffc0cb,
-             size: 2,
+             size: 1,
              map: THREE.ImageUtils.loadTexture("../images/petal.png"),
              blending: THREE.AdditiveBlending,
              transparent: true,
