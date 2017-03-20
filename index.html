@@ -5,40 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jessica Tran | Full Stack</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/devicons.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/portfolio.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+
   <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
+  <script src="js/jquery.fullPage.min.js"></script>
   <script src="js/portfolio.js"></script>
 </head>
 <body>
   <header>
-    <nav>
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">about</a></li>
-      <li><a href="#stack">stack</a></li>
-      <li><a href="#work">work</a></li>
-      <li><a href="#contact">contact</a></li>
+    <nav id="navBar">
+      <li data-menuanchor="home"><a href="#home">home</a></li>
+      <li data-menuanchor="about"><a href="#about">about</a></li>
+      <li data-menuanchor="stack"><a href="#stack">stack</a></li>
+      <li data-menuanchor="work"><a href="#work">work</a></li>
+      <li data-menuanchor="contact"><a href="#contact">contact</a></li>
     </nav>
   </header>
 
   <img src="images/menu.png" alt="" id="menu">
   <div class="menuList animated in-view">
     <div>
-    <li><a href="#home">home</a></li>
-    <li><a href="#about">about</a></li>
-    <li><a href="#stack">stack</a></li>
-    <li><a href="#work">work</a></li>
-    <li><a href="#contact">contact</a></li>
+    <li data-menuanchor="home"><a href="#home">home</a></li>
+    <li data-menuanchor="about"><a href="#about">about</a></li>
+    <li data-menuanchor="stack"><a href="#stack">stack</a></li>
+    <li data-menuanchor="work"><a href="#work">work</a></li>
+    <li data-menuanchor="contact"><a href="#contact">contact</a></li>
     </div>
   </div>
 
   <p id="sign">Handcrafted with &hearts; by Jess</p>
 
-  <div class="pageWrapper">
 
-    <div id="home">
+  <div class="pageWrapper">
+<div id="fullpage">
+
+  <div class="section fp-auto-height" id="section1">
+    <div id="p1">
       <div>
         <p class="title animated fadeInLeft in-view">hello, my name is </p>
         <p class="name animated fadeInRight in-view">JESSICA TRAN</p>
@@ -46,8 +53,10 @@
         <p class="title animated fadeInRight in-view">I enjoy solving probems and bringing creative ideas to life.</p>
       </div>
     </div>
+  </div>
 
-    <div id="about">
+  <div class="section fp-auto-height" id="section2">
+    <div id="p2">
       <div>
         <p class="techName animated fadeInLeft">About Me</p>
         <div class="photo"></div>
@@ -56,8 +65,10 @@
         <p class="aboutMe">I get a kick out of solving difficult problems and am always determined to find a solution.</p>
       </div>
     </div>
+  </div>
 
-    <div id="stack">
+  <div class="section fp-auto-height" id="section3">
+    <div id="p3">
       <div>
         <div class="stackBox">
           <p class="techName animated fadeInLeft">Tech Stack</p>
@@ -86,9 +97,10 @@
         </div>
       </div>
     </div>
+  </div>
 
-
-    <div id="work">
+  <div class="section fp-auto-height" id="section4">
+    <div id="p4">
       <div class="workWrapper">
         <p class="techName animated fadeInLeft" id="firstWorkTitle">work</p>
         <div id="workContainer">
@@ -137,7 +149,7 @@
         </div>
 
         <div id="workContainer">
-          <div class="workText">
+          <div class="workText" id="lastWork">
             <p class="workName animated zoomIn">Tic Tac Toe</p>
             <div class="work-box work4"></div>
             <p>
@@ -152,11 +164,16 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="contact">
+  <div class="section fp-auto-height" id="section5">
+    <div id="p5">
       <div>
         <p class="techName animated fadeInLeft">Contact Me</p>
           <div class="contactName contact-wrapper">
+            <p>
+              <a href="tel:+61405620208">0405 620 208</a>
+            </p>
             <p>
                 <a href="mailto:jtran040@gmail.com">jtran040@gmail.com</a>
             </p>
@@ -173,6 +190,7 @@
       </div>
     </div>
   </div>
+</div>
 
 
   <footer>
@@ -191,6 +209,7 @@
           <img src="images/resume.png" alt="" class="icons" id="resume">
         </a>
       </div>
+    </div>
     </div>
   </footer>
 </body>

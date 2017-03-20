@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+  $('#fullpage').fullpage({
+  scrollOverflow: true,
+  menu: '#navBar',
+  anchors:['home', 'about', 'stack', 'work', 'contact'],
+  keyboardScrolling: false,
+  });
+
+
   //Pop up menu on phones
   var menuOn = false;
   $('#menu, .menuList').on('click',function(){
