@@ -229,12 +229,24 @@ header{
   margin: 2em 1em;
 }
 
+.stackBox li{
+  border: 1px solid rgba(0,0,0,0.6);
+  display: inline-block;
+  padding: 0.1em 0.3em 0.1em 0.3em;
+  margin-bottom:0.2em;
+}
+
+
 .techStack, .sectionName{
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 5px;
 
+}
+
+.techIcon {
+  font-size: 3em;
 }
 
 .techName{

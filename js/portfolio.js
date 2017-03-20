@@ -8,7 +8,6 @@ $(document).ready(function(){
   scrollOverflowOptions: {
     scrollbars: false,
     mouseWheel: true,
-    hideScrollbars: true,
   }
 
   });
