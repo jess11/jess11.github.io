@@ -1,4 +1,4 @@
-p3/*font-family: 'Roboto', sans-serif;  400 or 700
+/*font-family: 'Roboto', sans-serif;  400 or 700
 font-family: 'Open Sans', sans-serif;*/
 
 
@@ -19,7 +19,6 @@ body{
 	height: 100vh;
 	overflow: hidden;
   z-index: -100;
-  /*background-image: linear-gradient(#061333,#171a5f);*/
 }
 
 #sign{
@@ -192,7 +191,7 @@ header{
 }
 
 #lastWork{
-  padding-bottom: 7em;
+  padding-bottom: 3em;
 }
 
 
@@ -353,7 +352,7 @@ footer{
 /*Responsive*/
 @media screen and (max-width: 500px) and (orientation: portrait){
 
-  #sign, header{
+  #sign, header, footer{
     display:none;
     font-family: 'Roboto', sans-serif;
   }
@@ -378,10 +377,16 @@ footer{
     width:100%;
   }
   #p1, #p2, #p4, #p5{
-    padding: 0.5em 1em 7em 1em;
+    padding: 0em 1em 0em 1em;
   }
   .pageWrapper{
-    padding: 0 1em 5em 1em;
+    padding: 0 0.5em 0em 0.5em;
+  }
+  .techName{
+    padding:0.5em 0 0 0 ;
+  }
+  .stackBox{
+    margin: 1em 1em;
   }
 
 }
@@ -397,7 +402,7 @@ footer{
     font-size: 1.4em;
     width:100%;
   }
-  #sign, header{
+  #sign, header, footer{
     display:none;
   }
   #menu{

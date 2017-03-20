@@ -1,22 +1,29 @@
 window.addEventListener('load', init, false);
 
-var Colors = {
-	red:0xf25346,
-	white:0xd8d0d1,
-	brown:0x59332e,
-	pink:0xF5986E,
-	brownDark:0x23190f,
-  	blue:0xaaaaff,
-};
-
 var scene,
 		camera, controls, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH,
 		renderer, container;
 
-var Person;
 var step =0;
-
+var speed = 20;
 function init() {
+
+	// $('nav').on("click",function(){
+	// 	speed = 900;
+	// 	setTimeout(function(){ speed=20 }, 500);
+	// });
+
+	$(window).bind('mousewheel', function(event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+        console.log('Scroll up');
+
+    }
+    else {
+        console.log('Scroll down');
+				speed = 900;
+				setTimeout(function(){ speed=20 }, 1000);
+    }
+});
 
 	createScene();
 	createAsteroid();
@@ -24,6 +31,8 @@ function init() {
 	createLights();
 
 	loop();
+
+
 
 }
 
@@ -90,8 +99,6 @@ Asteroid = function(){
 
   var l = geom.vertices.length;
 
-	this.waves = [];
-
 	for (var i=0; i<l; i++){
 
 		var v = geom.vertices[i];
@@ -107,7 +114,7 @@ Asteroid = function(){
 
 	// create the material
 	var mat = new THREE.MeshPhongMaterial({
-		color:Colors.blue,
+		color:0xaaaaff,
 		transparent:true,
 		opacity:0.5,
 		shading:THREE.FlatShading,
@@ -170,6 +177,8 @@ function createParticles(){
 	scene.add(particles);
 }
 
+
+
 function animateParticles() {
     var verts = particleSystem.geometry.vertices;
     for(var i = 0; i < verts.length; i++) {
@@ -177,7 +186,7 @@ function animateParticles() {
         if (vert.z > 190) {
             vert.z = Math.random() * 400 - 200;
         }
-        vert.z = vert.z + (20 * 0.01);
+        vert.z = vert.z + (speed * 0.01);
 
     }
     particleSystem.geometry.verticesNeedUpdate = true;
