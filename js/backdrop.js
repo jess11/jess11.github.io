@@ -20,7 +20,7 @@ function init() {
     }
     else {
         console.log('Scroll down');
-				speed = 900;
+				speed = 800;
 				setTimeout(function(){ speed=20 }, 1000);
     }
 });
