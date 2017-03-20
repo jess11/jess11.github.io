@@ -8,19 +8,9 @@ var step =0;
 var speed = 20;
 function init() {
 
-	// $('nav').on("click",function(){
-	// 	speed = 900;
-	// 	setTimeout(function(){ speed=20 }, 500);
-	// });
-
 	$(window).bind('mousewheel', function(event) {
-    if (event.originalEvent.wheelDelta >= 0) {
-        console.log('Scroll up');
-
-    }
-    else {
-        console.log('Scroll down');
-				speed = 800;
+    if (event.originalEvent.wheelDelta < 0) {
+				speed = 300;
 				setTimeout(function(){ speed=20 }, 1000);
     }
 });
