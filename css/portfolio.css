@@ -122,14 +122,13 @@ header{
   z-index:50;
 }
 
-
 .title{
   font-family: 'Roboto', sans-serif;
   font-size: 1.8em;
   letter-spacing: 0.1em;
   font-weight: bolder;
   color: rgba(0,0,0,0.6);
-  width: 20em;
+  max-width: 20em;
 }
 
 .name{

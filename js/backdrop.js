@@ -11,7 +11,7 @@ function init() {
 	$(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta < 0) {
 				speed = 300;
-				setTimeout(function(){ speed=20 }, 1000);
+				setTimeout(function(){ speed=20 }, 1200);
     }
 });
 
