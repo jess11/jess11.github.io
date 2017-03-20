@@ -21,8 +21,6 @@ function init() {
 	createScene();
 	createAsteroid();
   createParticles();
-  createRose();
-	createPrince();
 	createLights();
 
 	loop();
@@ -119,43 +117,6 @@ Asteroid = function(){
 	this.mesh.receiveShadow = true;
 }
 
-Rose = function(){
-
-  var geom = new THREE.PlaneGeometry(16,30);
-
-  // create the material
-  var mat = new THREE.MeshBasicMaterial({
-    // color:Colors.blue,
-    transparent:true,
-    shading:THREE.FlatShading,
-    map: THREE.ImageUtils.loadTexture("../images/rose.png"),
-    side: THREE.DoubleSide
-  });
-
-  this.mesh = new THREE.Mesh(geom, mat);
-
-}
-
-Prince = function(){
-
-  var geom = new THREE.PlaneGeometry(72,85);
-
-  // create the material
-  var mat = new THREE.MeshBasicMaterial({
-    // color:Colors.blue,
-    transparent:true,
-    shading:THREE.FlatShading,
-    map: THREE.ImageUtils.loadTexture("../images/prince.gif"),
-    side: THREE.DoubleSide
-  });
-
-  this.mesh = new THREE.Mesh(geom, mat);
-
-}
-
-
-var prince;
-var rose;
 var asteroid;
 
 function createAsteroid(){
@@ -166,30 +127,9 @@ function createAsteroid(){
 	scene.add(asteroid.mesh);
 }
 
-function createRose(){
-  rose = new Rose();
-  rose.mesh.position.y = -35;
-  rose.mesh.position.z = 70;
-	rose.mesh.position.x = 20;
-
-  scene.add(rose.mesh);
-}
-
-function createPrince(){
-  prince = new Prince();
-  prince.mesh.position.y = -10;
-  prince.mesh.position.z = 40;
-	prince.mesh.position.x = -40;
-
-  scene.add(prince.mesh);
-}
-
-
 function loop(){
   step += 0.01;
   asteroid.mesh.position.y = -350 + (2 * Math.sin(step));
-  rose.mesh.position.y = -50 + (2 * Math.sin(step));
-	prince.mesh.position.y = -25 + (2 * Math.sin(step));
   animateParticles();
 	renderer.render(scene, camera);
 	requestAnimationFrame(loop);
