@@ -118,7 +118,7 @@ var asteroid;
 
 function createAsteroid(){
 	asteroid = new Asteroid();
-	asteroid.mesh.position.x = 0;
+	asteroid.mesh.position.x = -100;
 	asteroid.mesh.position.y = -350;
   asteroid.mesh.position.z = 80;
 	scene.add(asteroid.mesh);
